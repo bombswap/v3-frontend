@@ -77,6 +77,10 @@ export const FALLBACK_URLS = {
     // "Safe" URLs
     `https://alfajores-forno.celo-testnet.org`,
   ],
+  [SupportedChainId.BOMB]: [
+    // "Safe" URLs
+    'https://rpc.bombchain.com',
+  ],
   [SupportedChainId.BNB]: [
     // "Safe" URLs
     'https://endpoints.omniatech.io/v1/bsc/mainnet/public',
@@ -125,6 +129,8 @@ export const RPC_URLS = {
     `https://polygon-mumbai.infura.io/v3/${INFURA_KEY}`,
     ...FALLBACK_URLS[SupportedChainId.POLYGON_MUMBAI],
   ],
+  [SupportedChainId.BOMB]: FALLBACK_URLS[SupportedChainId.BOMB],
+
   [SupportedChainId.CELO]: FALLBACK_URLS[SupportedChainId.CELO],
   [SupportedChainId.CELO_ALFAJORES]: FALLBACK_URLS[SupportedChainId.CELO_ALFAJORES],
   [SupportedChainId.BNB]: [QUICKNODE_RPC_URL, ...FALLBACK_URLS[SupportedChainId.BNB]],

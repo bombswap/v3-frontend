@@ -14,7 +14,7 @@ import {
   OnReviewSwapClick,
   SwapWidget,
   SwapWidgetSkeleton,
-} from '@uniswap/widgets'
+} from '@bombswap/widgets'
 import { useWeb3React } from '@web3-react/core'
 import { useToggleAccountDrawer } from 'components/AccountDrawer'
 import { useActiveLocale } from 'hooks/useActiveLocale'

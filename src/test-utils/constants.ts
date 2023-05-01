@@ -1,5 +1,5 @@
 import { CurrencyAmount, Percent, Token, TradeType } from '@uniswap/sdk-core'
-import { V3Route } from '@uniswap/smart-order-router'
+import { V3Route } from '@bombswap/smart-order-router'
 import { FeeAmount, Pool } from '@uniswap/v3-sdk'
 import JSBI from 'jsbi'
 import { InterfaceTrade } from 'state/routing/types'

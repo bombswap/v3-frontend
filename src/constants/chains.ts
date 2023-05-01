@@ -9,7 +9,7 @@
 export enum SupportedChainId {
   MAINNET = 1,
   GOERLI = 5,
-
+  BOMB = 2300,
   ARBITRUM_ONE = 42161,
   ARBITRUM_GOERLI = 421613,
 
@@ -34,6 +34,7 @@ export const UniWalletSupportedChains = [
 
 export const CHAIN_IDS_TO_NAMES = {
   [SupportedChainId.MAINNET]: 'mainnet',
+  [SupportedChainId.BOMB]: 'bomb',
   [SupportedChainId.GOERLI]: 'goerli',
   [SupportedChainId.POLYGON]: 'polygon',
   [SupportedChainId.POLYGON_MUMBAI]: 'polygon_mumbai',
@@ -74,6 +75,7 @@ export const UNSUPPORTED_V2POOL_CHAIN_IDS = [
   SupportedChainId.OPTIMISM,
   SupportedChainId.ARBITRUM_ONE,
   SupportedChainId.BNB,
+  SupportedChainId.BOMB,
   SupportedChainId.ARBITRUM_GOERLI,
 ] as const
 
@@ -97,6 +99,7 @@ export const L1_CHAIN_IDS = [
   SupportedChainId.CELO,
   SupportedChainId.CELO_ALFAJORES,
   SupportedChainId.BNB,
+  SupportedChainId.BOMB,
 ] as const
 
 export type SupportedL1ChainId = typeof L1_CHAIN_IDS[number]

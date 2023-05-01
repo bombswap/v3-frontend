@@ -1,7 +1,6 @@
 import { Currency, Ether, NativeCurrency, Token, WETH9 } from '@uniswap/sdk-core'
 import invariant from 'tiny-invariant'
 
-import { UNI_ADDRESS } from './addresses'
 import { SupportedChainId } from './chains'
 
 export const NATIVE_CHAIN_ID = 'NATIVE'
@@ -18,6 +17,27 @@ export const USDC_MAINNET = new Token(
   'USDC',
   'USD//C'
 )
+export const USDC_BOMB = new Token(
+  SupportedChainId.BOMB,
+  '0x75942DD8bD0C6F845a647E0Fa157b5725077960D',
+  18,
+  'USDC',
+  'USDC'
+)
+export const USDT_BOMB = new Token(
+  SupportedChainId.BOMB,
+  '0x0FCbc0baCaD8C73be4Fad141682542b44C4737bB',
+  18,
+  'USDT',
+  'Tether'
+)
+// const WBTC_BOMB = new Token(
+//   SupportedChainId.BOMB,
+//   '0x140F62aCCC69cb24eABdC0E00b7caaC577cA5b24',
+//   18,
+//   'BTC',
+//   'Wrapped BTC'
+// )
 const USDC_GOERLI = new Token(
   SupportedChainId.GOERLI,
   '0x07865c6e87b9f70255377e024ace6630c1eaa37f',
@@ -355,8 +375,8 @@ export const BUSD_BSC = new Token(
 export const DAI_BSC = new Token(SupportedChainId.BNB, '0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3', 18, 'DAI', 'DAI')
 
 export const UNI: { [chainId: number]: Token } = {
-  [SupportedChainId.MAINNET]: new Token(SupportedChainId.MAINNET, UNI_ADDRESS[1], 18, 'UNI', 'Uniswap'),
-  [SupportedChainId.GOERLI]: new Token(SupportedChainId.GOERLI, UNI_ADDRESS[5], 18, 'UNI', 'Uniswap'),
+  // [SupportedChainId.MAINNET]: new Token(SupportedChainId.MAINNET, UNI_ADDRESS[1], 18, 'UNI', 'Uniswap'),
+  // [SupportedChainId.GOERLI]: new Token(SupportedChainId.GOERLI, UNI_ADDRESS[5], 18, 'UNI', 'Uniswap'),
 }
 
 export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } = {
@@ -417,6 +437,13 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } =
     'CELO',
     'Celo native asset'
   ),
+  [SupportedChainId.BOMB]: new Token(
+    SupportedChainId.BOMB,
+    '0x87460B9F21763aee800b94362062a06dA1B5f6Ee',
+    18,
+    'WBOMB',
+    'Wrapped BOMB'
+  ),
   [SupportedChainId.BNB]: new Token(
     SupportedChainId.BNB,
     '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
@@ -460,6 +487,28 @@ class MaticNativeCurrency extends NativeCurrency {
   public constructor(chainId: number) {
     if (!isMatic(chainId)) throw new Error('Not matic')
     super(chainId, 18, 'MATIC', 'Polygon Matic')
+  }
+}
+
+function isBomb(chainId: number): chainId is SupportedChainId.BOMB {
+  return chainId === SupportedChainId.BOMB
+}
+
+class BombNativeCurrency extends NativeCurrency {
+  equals(other: Currency): boolean {
+    return other.isNative && other.chainId === this.chainId
+  }
+
+  get wrapped(): Token {
+    if (!isBomb(this.chainId)) throw new Error('Not bomb')
+    const wrapped = WRAPPED_NATIVE_CURRENCY[this.chainId]
+    invariant(wrapped instanceof Token)
+    return wrapped
+  }
+
+  public constructor(chainId: number) {
+    if (!isBomb(chainId)) throw new Error('Not bomb')
+    super(chainId, 18, 'BOMB', 'BOMB')
   }
 }
 
@@ -509,6 +558,8 @@ export function nativeOnChain(chainId: number): NativeCurrency | Token {
     nativeCurrency = getCeloNativeCurrency(chainId)
   } else if (isBsc(chainId)) {
     nativeCurrency = new BscNativeCurrency(chainId)
+  } else if (isBomb(chainId)) {
+    nativeCurrency = new BombNativeCurrency(chainId)
   } else {
     nativeCurrency = ExtendedEther.onChain(chainId)
   }
@@ -525,6 +576,7 @@ export const TOKEN_SHORTHANDS: { [shorthand: string]: { [chainId in SupportedCha
     [SupportedChainId.POLYGON]: USDC_POLYGON.address,
     [SupportedChainId.POLYGON_MUMBAI]: USDC_POLYGON_MUMBAI.address,
     [SupportedChainId.BNB]: USDC_BSC.address,
+    [SupportedChainId.BOMB]: USDC_BOMB.address,
     [SupportedChainId.CELO]: PORTAL_USDC_CELO.address,
     [SupportedChainId.CELO_ALFAJORES]: PORTAL_USDC_CELO.address,
     [SupportedChainId.GOERLI]: USDC_GOERLI.address,

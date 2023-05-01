@@ -1,6 +1,6 @@
 import { sendAnalyticsEvent, useTrace } from '@uniswap/analytics'
 import { InterfaceSectionName, SwapEventName } from '@uniswap/analytics-events'
-import { Currency, Field, SwapController, SwapEventHandlers, TradeType } from '@uniswap/widgets'
+import { Currency, Field, SwapController, SwapEventHandlers, TradeType } from '@bombswap/widgets'
 import { useWeb3React } from '@web3-react/core'
 import CurrencySearchModal from 'components/SearchModal/CurrencySearchModal'
 import { isSupportedChain } from 'constants/chains'
@@ -181,7 +181,7 @@ export function useSyncWidgetInputs({
   return { inputs: { value, ...valueHandlers }, tokenSelector }
 }
 
-// TODO(zzmp): Move to @uniswap/widgets.
+// TODO(zzmp): Move to @bombswap/widgets.
 function invertField(field: Field) {
   switch (field) {
     case Field.INPUT:

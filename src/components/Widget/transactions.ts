@@ -1,3 +1,4 @@
+/* eslint-disable simple-import-sort/imports */
 import { sendAnalyticsEvent, useTrace } from '@uniswap/analytics'
 import { InterfaceEventName, InterfaceSectionName, SwapEventName } from '@uniswap/analytics-events'
 import { Trade } from '@uniswap/router-sdk'
@@ -10,7 +11,7 @@ import {
   TransactionInfo,
   TransactionType,
   TransactionType as WidgetTransactionType,
-} from '@uniswap/widgets'
+} from '@bombswap/widgets'
 import { useWeb3React } from '@web3-react/core'
 import {
   formatPercentInBasisPointsNumber,
