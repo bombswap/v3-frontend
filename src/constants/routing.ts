@@ -47,6 +47,7 @@ import {
   USDT_POLYGON,
   WBTC,
   WBTC_ARBITRUM_ONE,
+  WBTC_BOMB,
   WBTC_OPTIMISM,
   WBTC_POLYGON,
   WETH_POLYGON,
@@ -197,7 +198,7 @@ export const COMMON_BASES: ChainCurrencyList = {
     CUSD_CELO_ALFAJORES,
     CEUR_CELO_ALFAJORES,
   ],
-
+  [SupportedChainId.BOMB]: [nativeOnChain(SupportedChainId.BOMB), USDC_BOMB, USDT_BOMB, WBTC_BOMB],
   [SupportedChainId.BNB]: [
     nativeOnChain(SupportedChainId.BNB),
     DAI_BSC,

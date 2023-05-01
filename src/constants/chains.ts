@@ -75,7 +75,6 @@ export const UNSUPPORTED_V2POOL_CHAIN_IDS = [
   SupportedChainId.OPTIMISM,
   SupportedChainId.ARBITRUM_ONE,
   SupportedChainId.BNB,
-  SupportedChainId.BOMB,
   SupportedChainId.ARBITRUM_GOERLI,
 ] as const
 

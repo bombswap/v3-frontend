@@ -9,7 +9,7 @@ const BLOCK_EXPLORER_PREFIXES: { [chainId: number]: string } = {
   [SupportedChainId.POLYGON_MUMBAI]: 'https://mumbai.polygonscan.com',
   [SupportedChainId.CELO]: 'https://celoscan.io',
   [SupportedChainId.CELO_ALFAJORES]: 'https://alfajores-blockscout.celo-testnet.org',
-  [SupportedChainId.BOMB]: 'https://bomscan.com',
+  [SupportedChainId.BOMB]: 'https://bombscan.com',
   [SupportedChainId.BNB]: 'https://bscscan.com',
 }
 

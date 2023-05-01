@@ -24,6 +24,7 @@ export const USDC_BOMB = new Token(
   'USDC',
   'USDC'
 )
+// eslint-disable-next-line import/no-unused-modules
 export const USDT_BOMB = new Token(
   SupportedChainId.BOMB,
   '0x0FCbc0baCaD8C73be4Fad141682542b44C4737bB',
@@ -31,13 +32,14 @@ export const USDT_BOMB = new Token(
   'USDT',
   'Tether'
 )
-// const WBTC_BOMB = new Token(
-//   SupportedChainId.BOMB,
-//   '0x140F62aCCC69cb24eABdC0E00b7caaC577cA5b24',
-//   18,
-//   'BTC',
-//   'Wrapped BTC'
-// )
+// eslint-disable-next-line import/no-unused-modules
+export const WBTC_BOMB = new Token(
+  SupportedChainId.BOMB,
+  '0x140F62aCCC69cb24eABdC0E00b7caaC577cA5b24',
+  18,
+  'BTC',
+  'Wrapped BTC'
+)
 const USDC_GOERLI = new Token(
   SupportedChainId.GOERLI,
   '0x07865c6e87b9f70255377e024ace6630c1eaa37f',

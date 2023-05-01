@@ -1,4 +1,5 @@
 import bnbCircleLogoUrl from 'assets/images/bnbCircle.svg'
+import bombLogo from 'assets/images/bomb.png'
 import celoCircleLogoUrl from 'assets/images/celoCircle.png'
 import ethereumLogoUrl from 'assets/images/ethereum-logo.png'
 import polygonCircleLogoUrl from 'assets/images/polygonCircle.png'
@@ -204,9 +205,9 @@ const CHAIN_INFO: ChainInfoMap = {
     explorer: 'https://bombscan.com/',
     infoLink: 'https://info.bombswap.xyz/',
     label: 'BOMB Chain',
-    logoUrl: bnbLogo,
-    circleLogoUrl: bnbCircleLogoUrl,
-    squareLogoUrl: bnbSquareLogoUrl,
+    logoUrl: bombLogo,
+    circleLogoUrl: bombLogo,
+    squareLogoUrl: bombLogo,
     nativeCurrency: { name: 'BOMB', symbol: 'BOMB', decimals: 18 },
     defaultListUrl: BOMB_LIST,
     color: darkTheme.chain_56,
