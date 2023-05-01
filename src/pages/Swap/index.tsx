@@ -1,3 +1,4 @@
+import { Trade } from '@bombswap/router-sdk'
 import { Trans } from '@lingui/macro'
 import { sendAnalyticsEvent, Trace, TraceEvent } from '@uniswap/analytics'
 import {
@@ -8,7 +9,6 @@ import {
   InterfaceSectionName,
   SwapEventName,
 } from '@uniswap/analytics-events'
-import { Trade } from '@uniswap/router-sdk'
 import { Currency, CurrencyAmount, Percent, Token, TradeType } from '@uniswap/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import { useToggleAccountDrawer } from 'components/AccountDrawer'

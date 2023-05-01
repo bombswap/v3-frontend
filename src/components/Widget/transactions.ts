@@ -1,7 +1,7 @@
 /* eslint-disable simple-import-sort/imports */
 import { sendAnalyticsEvent, useTrace } from '@uniswap/analytics'
 import { InterfaceEventName, InterfaceSectionName, SwapEventName } from '@uniswap/analytics-events'
-import { Trade } from '@uniswap/router-sdk'
+import { Trade } from '@bombswap/router-sdk'
 import { Currency, Percent } from '@uniswap/sdk-core'
 import {
   OnTxSuccess,

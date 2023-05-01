@@ -5,7 +5,7 @@ import {
   SwapEventName,
   SwapPriceUpdateUserResponse,
 } from '@uniswap/analytics-events'
-import { Trade } from '@uniswap/router-sdk'
+import { Trade } from '@bombswap/router-sdk'
 import { Currency, TradeType } from '@uniswap/sdk-core'
 import {
   AddEthereumChainParameter,

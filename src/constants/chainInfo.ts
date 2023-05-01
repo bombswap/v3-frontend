@@ -206,8 +206,6 @@ const CHAIN_INFO: ChainInfoMap = {
     infoLink: 'https://info.bombswap.xyz/',
     label: 'BOMB Chain',
     logoUrl: bombLogo,
-    circleLogoUrl: bombLogo,
-    squareLogoUrl: bombLogo,
     nativeCurrency: { name: 'BOMB', symbol: 'BOMB', decimals: 18 },
     defaultListUrl: BOMB_LIST,
     color: darkTheme.chain_56,
