@@ -16,7 +16,7 @@
     "i18n:extract": "lingui extract --locale en-US",
     "i18n:compile": "yarn i18n:extract && lingui compile",
     "i18n:pseudo": "lingui extract --locale pseudo && lingui compile",
-    "prepare": "yarn contracts:compile && yarn graphql:fetch && yarn graphql:generate:data && yarn i18n:compile",
+    "prepare": "yarn contracts:compile && yarn graphql:fetch && yarn graphql:generate && yarn i18n:compile",
     "start": "craco start",
     "build": "craco build",
     "build:e2e": "REACT_APP_CSP_ALLOW_UNSAFE_EVAL=true REACT_APP_ADD_COVERAGE_INSTRUMENTATION=true craco build",
