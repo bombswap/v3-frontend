@@ -1,5 +1,5 @@
 overrideExisting: true
-schema: 'https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3'
+schema: 'https://graph.bombchain.com/subgraphs/name/bombswap/uniswap-v3'
 generates:
   ./src/graphql/thegraph/schema/schema.graphql:
     plugins:
