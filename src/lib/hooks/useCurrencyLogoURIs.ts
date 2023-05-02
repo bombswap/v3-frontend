@@ -3,13 +3,14 @@ import useHttpLocations from 'hooks/useHttpLocations'
 import { useMemo } from 'react'
 import { isAddress } from 'utils'
 
+import BombLogo from '../../assets/images/bomb.png'
 import EthereumLogo from '../../assets/images/ethereum-logo.png'
 import BnbLogo from '../../assets/svg/bnb-logo.svg'
 import CeloLogo from '../../assets/svg/celo_logo.svg'
 import MaticLogo from '../../assets/svg/matic-token-icon.svg'
 import { isCelo, NATIVE_CHAIN_ID, nativeOnChain } from '../../constants/tokens'
 
-type Network = 'ethereum' | 'arbitrum' | 'optimism' | 'polygon' | 'smartchain'
+type Network = 'ethereum' | 'arbitrum' | 'optimism' | 'polygon' | 'smartchain' | 'bomb'
 
 export function chainIdToNetworkName(networkId: SupportedChainId): Network {
   switch (networkId) {
@@ -21,6 +22,8 @@ export function chainIdToNetworkName(networkId: SupportedChainId): Network {
       return 'optimism'
     case SupportedChainId.POLYGON:
       return 'polygon'
+    case SupportedChainId.BOMB:
+      return 'bomb'
     case SupportedChainId.BNB:
       return 'smartchain'
     default:
@@ -35,6 +38,8 @@ export function getNativeLogoURI(chainId: SupportedChainId = SupportedChainId.MA
       return MaticLogo
     case SupportedChainId.BNB:
       return BnbLogo
+    case SupportedChainId.BOMB:
+      return BombLogo
     case SupportedChainId.CELO:
     case SupportedChainId.CELO_ALFAJORES:
       return CeloLogo

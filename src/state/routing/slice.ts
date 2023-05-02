@@ -34,9 +34,11 @@ function getRouter(chainId: ChainId): AlphaRouter {
 // routing API quote params: https://github.com/Uniswap/routing-api/blob/main/lib/handlers/quote/schema/quote-schema.ts
 const API_QUERY_PARAMS = {
   protocols: 'v2,v3,mixed',
+  //protocols: 'v2,v3',
 }
 const CLIENT_PARAMS = {
   protocols: [Protocol.V2, Protocol.V3, Protocol.MIXED],
+  //protocols: [Protocol.V2, Protocol.V3],
 }
 // Price queries are tuned down to minimize the required RPCs to respond to them.
 // TODO(zzmp): This will be used after testing router caching.

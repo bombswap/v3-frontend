@@ -2,9 +2,8 @@ import { t } from '@lingui/macro'
 import { useWeb3React } from '@web3-react/core'
 import { MouseoverTooltip } from 'components/Tooltip'
 import { useGetConnection } from 'connection'
-import { ConnectionType } from 'connection/types'
 import { getChainInfo } from 'constants/chainInfo'
-import { SupportedChainId, UniWalletSupportedChains } from 'constants/chains'
+import { SupportedChainId } from 'constants/chains'
 import { useOnClickOutside } from 'hooks/useOnClickOutside'
 import useSelectChain from 'hooks/useSelectChain'
 import useSyncChainQuery from 'hooks/useSyncChainQuery'
@@ -64,7 +63,7 @@ export const ChainSelector = ({ leftAlign }: ChainSelectorProps) => {
 
   const getConnection = useGetConnection()
   const connectionType = getConnection(connector).type
-  const isUniWallet = connectionType === ConnectionType.UNIWALLET
+  // const isUniWallet = connectionType === ConnectionType.UNIWALLET
 
   if (!chainId) {
     return null
@@ -77,7 +76,7 @@ export const ChainSelector = ({ leftAlign }: ChainSelectorProps) => {
       <Column paddingX="8">
         {NETWORK_SELECTOR_CHAINS.map((chainId: SupportedChainId) => (
           <ChainSelectorRow
-            disabled={isUniWallet && !UniWalletSupportedChains.includes(chainId)}
+            //  disabled={isUniWallet && !UniWalletSupportedChains.includes(chainId)}
             onSelectChain={onSelectChain}
             targetChain={chainId}
             key={chainId}

@@ -1,7 +1,5 @@
-import { IMetric, MetricLoggerUnit, setGlobalMetric } from '@bombswap/smart-order-router'
 import { skipToken } from '@reduxjs/toolkit/query/react'
 import { Currency, CurrencyAmount, TradeType } from '@uniswap/sdk-core'
-import { sendTiming } from 'components/analytics'
 import { AVERAGE_L1_BLOCK_TIME } from 'constants/chainInfo'
 import { useStablecoinAmountFromFiatValue } from 'hooks/useStablecoinPrice'
 import { useRoutingAPIArguments } from 'lib/hooks/routing/useRoutingAPIArguments'
@@ -124,14 +122,13 @@ export function useRoutingAPITrade<TTradeType extends TradeType>(
 }
 
 // only want to enable this when app hook called
-class GAMetric extends IMetric {
-  putDimensions() {
-    return
-  }
+// class GAMetric extends IMetric {
+//   putDimensions() {
+//     return
+//   }
 
-  putMetric(key: string, value: number, unit?: MetricLoggerUnit) {
-    sendTiming('Routing API', `${key} | ${unit}`, value, 'client')
-  }
-}
-
-setGlobalMetric(new GAMetric())
+//   putMetric(key: string, value: number, unit?: MetricLoggerUnit) {
+//     sendTiming('Routing API', `${key} | ${unit}`, value, 'client')
+//   }
+// }
+/// // setGlobalMetric(new GAMetric())

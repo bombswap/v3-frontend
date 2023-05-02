@@ -20,6 +20,11 @@ class TokenSafetyLookupTable {
     const dict: { [key: string]: TOKEN_LIST_TYPES } = {}
 
     // Initialize extended tokens first
+    // store.getState().lists.byUrl[BOMB_LIST].current?.tokens.forEach((token) => {
+    //   dict[token.address.toLowerCase()] = TOKEN_LIST_TYPES.UNI_EXTENDED
+    // })
+
+    // Initialize extended tokens first
     store.getState().lists.byUrl[UNI_EXTENDED_LIST].current?.tokens.forEach((token) => {
       dict[token.address.toLowerCase()] = TOKEN_LIST_TYPES.UNI_EXTENDED
     })

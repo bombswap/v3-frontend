@@ -1256,6 +1256,20 @@
     bignumber.js "^9.0.2"
     ethers "^5.3.1"
 
+"@bombswap/universal-router-sdk@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@bombswap/universal-router-sdk/-/universal-router-sdk-2.0.1.tgz#21254db3b56b2f594a77d713a1756405959d5d8b"
+  integrity sha512-Ti7Mj0FZfmkhh2Ih0O6K6dbGo6ng/mC9fSZwPbUh2l9y2c0aLa98k/o1sEnlPwtgHhTWxr9NWrdMRWrqXJccHQ==
+  dependencies:
+    "@bombswap/router-sdk" "^1.4.0"
+    "@bombswap/v2-sdk" "^1.0.1"
+    "@uniswap/permit2-sdk" "^1.2.0"
+    "@uniswap/sdk-core" "^3.1.0"
+    "@uniswap/universal-router" "1.4.0"
+    "@uniswap/v3-sdk" "^3.9.0"
+    bignumber.js "^9.0.2"
+    ethers "^5.3.1"
+
 "@bombswap/v2-sdk@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@bombswap/v2-sdk/-/v2-sdk-1.0.1.tgz#fc156c68d6af9cf462a73887dec9718a7f0d91ab"
