@@ -157,7 +157,7 @@
     "@uniswap/redux-multicall": "^1.1.8",
     "@bombswap/router-sdk": "^1.4.0",
     "@uniswap/sdk-core": "^3.2.2",
-    "@bombswap/smart-order-router": "^3.13.1",
+    "@bombswap/smart-order-router": "^3.13.3",
     "@uniswap/token-lists": "^1.0.0-beta.30",
     "@bombswap/universal-router-sdk": "^2.0.1",
     "@uniswap/v2-core": "1.0.0",
