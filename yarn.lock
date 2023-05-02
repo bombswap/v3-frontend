@@ -1242,7 +1242,7 @@
     node-cache "^5.1.2"
     stats-lite "^2.2.0"
 
-"@bombswap/smart-order-router@^3.13.2":
+"@bombswap/smart-order-router@^3.13.3":
   version "3.13.3"
   resolved "https://registry.yarnpkg.com/@bombswap/smart-order-router/-/smart-order-router-3.13.3.tgz#e7ae82487e8287f35465b3b284f449658fcdff7c"
   integrity sha512-kJKqeV0b3hZXsmAxxS4v/0Pzmk8ehof+MJENmxeMKMFR4hV41wSmAY2xwIAxjC5DUoFnZa5hO5S6lzfcm13l+A==
@@ -5415,10 +5415,10 @@
     dotenv "^14.2.0"
     hardhat-watcher "^2.1.1"
 
-"@uniswap/token-lists@^1.0.0-beta.25", "@uniswap/token-lists@^1.0.0-beta.30":
-  version "1.0.0-beta.30"
-  resolved "https://registry.yarnpkg.com/@uniswap/token-lists/-/token-lists-1.0.0-beta.30.tgz#2103ca23b8007c59ec71718d34cdc97861c409e5"
-  integrity sha512-HwY2VvkQ8lNR6ks5NqQfAtg+4IZqz3KV1T8d2DlI8emIn9uMmaoFbIOg0nzjqAVKKnZSbMTRRtUoAh6mmjRvog==
+"@uniswap/token-lists@^1.0.0-beta.25", "@uniswap/token-lists@^1.0.0-beta.30", "@uniswap/token-lists@^1.0.0-beta.31":
+  version "1.0.0-beta.31"
+  resolved "https://registry.yarnpkg.com/@uniswap/token-lists/-/token-lists-1.0.0-beta.31.tgz#ff3852bd505ec7b4c276625c762ea79a93a919ec"
+  integrity sha512-BQVoelKCRf64IToPEs1wxiXOnhr/ukwPOF78XG11PrTAOL4F8umjYKFb8ZPv1/dIJsPaC7GhLSriEqyp94SasQ==
 
 "@uniswap/universal-router@1.4.0":
   version "1.4.0"
