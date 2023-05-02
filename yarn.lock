@@ -1215,13 +1215,13 @@
     "@uniswap/swap-router-contracts" "1.1.0"
     "@uniswap/v3-sdk" "^3.8.3"
 
-"@bombswap/smart-order-router@^3.13.0":
-  version "3.13.0"
-  resolved "https://registry.yarnpkg.com/@bombswap/smart-order-router/-/smart-order-router-3.13.0.tgz#db7bce20f6f819bc643fc7b11de3ee9489a9c9a4"
-  integrity sha512-KqCrt0Gt9eqxMM9FkyR9BY854MjjNVnjozd5mxMw3V4DieZOgHWbbH6bG5aRMRpphfaqNVnL99xZRPOa3k6Ciw==
+"@bombswap/smart-order-router@^3.13.0", "@bombswap/smart-order-router@^3.13.1":
+  version "3.13.1"
+  resolved "https://registry.yarnpkg.com/@bombswap/smart-order-router/-/smart-order-router-3.13.1.tgz#43f860d2695b94f80cdcebd68c73ec766204848b"
+  integrity sha512-Bcw8883bl/PGs+tAG1FPFJ0VZ0UahC6CyTmlfRQLGjt3xYznYAZctRk+ah4wLR4YO017VXPomJegjLcqLCf9LQ==
   dependencies:
     "@bombswap/router-sdk" "^1.4.0"
-    "@bombswap/universal-router-sdk" "^2.0.0"
+    "@bombswap/universal-router-sdk" "^2.0.1"
     "@bombswap/v2-sdk" "^1.0.1"
     "@uniswap/default-token-list" "^2.0.0"
     "@uniswap/permit2-sdk" "^1.2.0"
@@ -1242,21 +1242,7 @@
     node-cache "^5.1.2"
     stats-lite "^2.2.0"
 
-"@bombswap/universal-router-sdk@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@bombswap/universal-router-sdk/-/universal-router-sdk-2.0.0.tgz#5bf9db044294563dcef07a7a39c3aadd75370dcf"
-  integrity sha512-x8LAKvQZZwk4JyIgXp0M4Wyio4ZLCMka8QKD7aIbUEX+KPufrW3YkJqlvZevmdAbe1Hopk8YCkWmrPxxekMmfg==
-  dependencies:
-    "@bombswap/router-sdk" "^1.4.0"
-    "@bombswap/v2-sdk" "^1.0.1"
-    "@uniswap/permit2-sdk" "^1.2.0"
-    "@uniswap/sdk-core" "^3.1.0"
-    "@uniswap/universal-router" "1.4.0"
-    "@uniswap/v3-sdk" "^3.9.0"
-    bignumber.js "^9.0.2"
-    ethers "^5.3.1"
-
-"@bombswap/universal-router-sdk@^2.0.1":
+"@bombswap/universal-router-sdk@^2.0.0", "@bombswap/universal-router-sdk@^2.0.1":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@bombswap/universal-router-sdk/-/universal-router-sdk-2.0.1.tgz#21254db3b56b2f594a77d713a1756405959d5d8b"
   integrity sha512-Ti7Mj0FZfmkhh2Ih0O6K6dbGo6ng/mC9fSZwPbUh2l9y2c0aLa98k/o1sEnlPwtgHhTWxr9NWrdMRWrqXJccHQ==
