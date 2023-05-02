@@ -1242,7 +1242,7 @@
     node-cache "^5.1.2"
     stats-lite "^2.2.0"
 
-"@bombswap/smart-order-router@^3.13.2":
+"@bombswap/smart-order-router@^3.13.3":
   version "3.13.3"
   resolved "https://registry.yarnpkg.com/@bombswap/smart-order-router/-/smart-order-router-3.13.3.tgz#e7ae82487e8287f35465b3b284f449658fcdff7c"
   integrity sha512-kJKqeV0b3hZXsmAxxS4v/0Pzmk8ehof+MJENmxeMKMFR4hV41wSmAY2xwIAxjC5DUoFnZa5hO5S6lzfcm13l+A==
@@ -5316,9 +5316,9 @@
   integrity sha512-b8j2/0FzqLU4Qq+M+QEPGzacnZxNrzAHp7yoAWRvNJiFyLjBvcgfaT9ORS8rw17M8XBLWjh83faj5Kymc+62qw==
 
 "@uniswap/default-token-list@^2.0.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@uniswap/default-token-list/-/default-token-list-2.2.0.tgz#d85a5c2520f57f4920bd989dfc9f01e1b701a567"
-  integrity sha512-vFPWoGzDjHP4i2l7yLaober/lZMmzOZXXirVF8XNyfNzRxgmYCWKO6SzKtfEUwxpd3/KUebgdK55II4Mnak62A==
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@uniswap/default-token-list/-/default-token-list-2.3.0.tgz#e5e522e775791999643aac9b0faf1ccfb4c49bd8"
+  integrity sha512-yfd4snv9K20tEbNwy9Vjym41RU3Yb2lN0seKxsgkr+m3f6oub2lWyXfTiNwgGFbOQPDvX4dxjMhA+M+S7mxqKg==
 
 "@uniswap/eslint-config@^1.1.1":
   version "1.1.1"
